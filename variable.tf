@@ -30,6 +30,12 @@ variable "var_route_table" {
   default     = "seshagiri_route_table"
 }
 
+variable "var_route_table_assoc" {
+  type        = string
+  description = "route table association "
+  default     = "seshagiri_route_table_assoc"
+}
+
 
 locals {
   subnet_cidr_ip_addresses = ["10.0.1.0/24", "10.0.2.0/24", "10.0.3.0/24", "10.0.4.0/24"]
